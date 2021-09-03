@@ -1,0 +1,73 @@
+body {
+    font-family: Roboto, system-ui, sans-serif;
+}
+
+table {
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+thead tr th {
+    padding: .5rem 0;
+}
+thead tr th:nth-child(1) {
+    border: 1px solid #ee5253;
+    background-color: #ff6b6b;
+}
+thead tr th:nth-child(2) {
+    border: 1px solid #ff9f43;
+    background-color: #feca57;
+}
+thead tr th:nth-child(3) {
+    border: 1px solid #0abde3;
+    background-color: #48dbfb;
+}
+thead tr th:nth-child(4) {
+    border: 1px solid #10ac84;
+    background-color: #1dd1a1;
+}
+
+tbody tr td {
+    border: 1px solid #c8d6e5;
+    padding: .25rem;
+    font-size: .75rem;
+}
+
+tbody tr:not(:last-child) td:hover {
+    background-color: #c8d6e5;
+    border: 1px solid #8395a7;
+    transition: background-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+tbody tr:last-child td {
+    font-weight: bold;
+    text-align: center;
+    padding: .5rem;
+}
+
+input#aux {
+    visibility: hidden;
+}
+
+.active {
+    animation-duration: .5s;
+    animation-name: copied;
+}
+
+@keyframes copied {
+    0% {
+        background-color: #c8d6e5;
+        border: 1px solid #8395a7;
+    }
+    50% {
+        background-color: #222f3e;
+        color: #c8d6e5;
+        transform: scale(.9);
+    }
+    100% {
+        background-color: #c8d6e5;
+        border: 1px solid #8395a7;
+    }
+}
