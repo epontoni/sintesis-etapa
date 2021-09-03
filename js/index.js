@@ -1,6 +1,5 @@
 window.onload = function() {
     var celdas = document.querySelectorAll('.celda');
-    var aux = document.querySelector("#aux");
     
     for (var i=0, len = celdas.length; i < len; i++){
         celdas[i].addEventListener('click', function(e){

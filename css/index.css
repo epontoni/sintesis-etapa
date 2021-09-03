@@ -47,10 +47,6 @@ tbody tr:last-child td {
     padding: .5rem;
 }
 
-input#aux {
-    visibility: hidden;
-}
-
 .active {
     animation-duration: .5s;
     animation-name: copied;
@@ -70,4 +66,24 @@ input#aux {
         background-color: #c8d6e5;
         border: 1px solid #8395a7;
     }
+}
+
+footer {
+    text-align: center;
+    padding: .5rem 0;
+}
+footer span {
+    font-family: consolas, system-iu, sans-serif;
+    display: block;
+}
+
+footer span a {
+    display: inline-block;
+    text-decoration: none;
+    color: #222f3e;
+    transition: transform .1s ease-in;
+}
+
+footer span a:hover {
+    transform: scale(1.1);
 }
